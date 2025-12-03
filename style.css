@@ -1,48 +1,64 @@
-body{ 
-    font-family: Arial, sans-serif;
-    background-color: #acaca0;
-    text-align: center;
-    margin: 20px auto;
+/*reset*/
+*{
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
 }
-h1 {
-    color: black;
-    margin-bottom: 25px;
-}
-.product-box {
-    background-color:whitesmoke;
-    width: 300px;
-    margin: 0 auto;
-    padding: 15px;
-    border:2px solid red;
-    border-radius: 8px;
-}
-.product-box img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-.product-box h2 {
-    color: black;
-    font-size: 20 px;
-    margin-top: 10px;
-}
-.description {
-    color: black;
-    font-size: 14px;
-    margin: 10px;
-}
-.price {
-    color: red;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-button {
-    background-color: blue;
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    padding: 15px 20px;
 }
-button:hover {
-    background-color: darkblue;
+
+.logo{
+    font-size: 1.5rem;                  /*rem depends on root and here root is navbar, 1.5x navbar*/
+    font-weight: bold;
+}
+
+.nav-links{
+    display: flex;                      /*applied flex again bcz its not direct child*/
+    list-style: none;
+}
+
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;                     /*same as root element*/   /*em=parent, rem=child*/
+}
+
+.actions a{
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*responsive design*/
+@media(max-width: 768px){
+    .nav-links{
+        display: none;              /*hide menu on smaller screens*/
+    }
+    .actions{
+        font-size: 0.9rem;
+    }
+}
+
+@media(min-width: 769px) and (min-width: 1024px){
+    .nav-links a{
+        font-size: 0.9rem;
+    }
+}
+
+@media(min-width:1025px){
+    .nav-links a{
+        font-size: 1rem;
+    }
 }
