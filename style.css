@@ -1,64 +1,46 @@
-/*reset*/
-*{
-    margin: 0;
-    box-sizing: 0;
-    padding: 0;
+body {
+     font-family: Arial, Helvetica, sans-serif;
+      margin: 30px;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222;
+h1 {
+    text-align: center;
+    color: black                                                                                                                                                    ;
+    margin-bottom: 40px;
+}
+.block-menu a {
+    display: block;
+    background-color: orchid;
     color: white;
-    padding: 15px 20px;
-}
-
-.logo{
-    font-size: 1.5rem;                  /*rem depends on root and here root is navbar, 1.5x navbar*/
-    font-weight: bold;
-}
-
-.nav-links{
-    display: flex;                      /*applied flex again bcz its not direct child*/
-    list-style: none;
-}
-
-.nav-links li{
-    margin: 0 15px;
-}
-
-.nav-links a{
+    padding: 12px;
+    margin-bottom: 5px;
     text-decoration: none;
-    color: white;
-    font-size: 1rem;                     /*same as root element*/   /*em=parent, rem=child*/
 }
-
-.actions a{
-    margin-left: 15px;
+.inline-menu a {
+    display: inline;
+    background-color: blue;
     color: white;
+    padding: 6px 12px;
+    margin-right: 6px;
     text-decoration: none;
-    font-weight: bold;
+}
+.inline-block-menu a {
+    display: inline-block;
+    background-color: goldenrod;
+    color: white;
+    padding: 12px 20px;
+    margin-right: 10px;
+    text-decoration: none;
 }
 
-/*responsive design*/
-@media(max-width: 768px){
-    .nav-links{
-        display: none;              /*hide menu on smaller screens*/
-    }
-    .actions{
-        font-size: 0.9rem;
-    }
+.float-menu a {
+    float: left;
+    background-color: #4ae5b1;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin-right: 10px;
 }
-
-@media(min-width: 769px) and (min-width: 1024px){
-    .nav-links a{
-        font-size: 0.9rem;
-    }
-}
-
-@media(min-width:1025px){
-    .nav-links a{
-        font-size: 1rem;
-    }
+.clear {
+    clear: both;
 }
