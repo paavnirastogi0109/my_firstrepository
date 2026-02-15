@@ -3,10 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello,World</h1>
-    <p>This is a sample HTML document to deploy on github.</p>
+
+<!-- ===== Navbar ===== -->
+<header class="navbar">
+    <h2 class="logo">MyPortfolio</h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- ===== Home Section ===== -->
+<section id="home" class="home">
+    <div class="home-content">
+        <h1>Hello, I'm <span>Paavni Rastogi</span></h1>
+        <p>Aspiring Web Developer | HTML, CSS, GitHub</p>
+        <button class="btn">Hire Me</button>
+    </div>
+
+    <div class="home-image">
+        <img src="myphoto.jpeg" alt="Profile Image">
+    </div>
+</section>
+
+<!-- ===== About ===== -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Web Developer learning Frontend development with HTML, CSS,
+        and GitHub. I enjoy creating clean and responsive websites and improving my
+        skills every day.
+    </p>
+</section>
+
+<!-- ===== Skills ===== -->
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-box">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">Git & GitHub</div>
+    </div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-box">
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Responsive HTML & CSS portfolio design.</p>
+        </div>
+
+        <div class="project">
+            <h3>Student Registration Form</h3>
+            <p>Clean & validated form using HTML.</p>
+        </div>
+
+        <div class="project">
+            <h3>Product Landing Page</h3>
+            <p>Modern UI with flexbox layout.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Message</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+<footer class="footer">
+    © 2025 MyPortfolio | All Rights Reserved
+</footer>
 </body>
 </html>
